@@ -61,14 +61,6 @@ function pasyans(x, y, lst) {
     })
 }
 
-function shuffle(lst){
-    for (let i = lst.length-1; i >= 0; i--){
-        let randomInt = Math.floor(Math.random()*(i+1));
-        [lst[i], lst[randomInt]] = [lst[randomInt], lst[i]];
-    }
-    return lst
-}
-
 function hideCards(x, y,lst) {
     lst.forEach(()=>{
         ctx.fillStyle='#c9a1e7';
